@@ -1,0 +1,3 @@
+C:\Users\Thales Valente\source\repos\Assignment4_JS\Assignment4_JS\obj\Debug\Assignment4_JS.njsprojAssemblyReference.cache
+C:\Users\Thales Valente\source\repos\Assignment4_JS\Assignment4_JS\obj\Debug\Assignment4_JS.njsproj.CoreCompileInputs.cache
+C:\Users\Thales Valente\source\repos\Assignment4_JS\Assignment4_JS\bin\Microsoft.NodejsTools.WebRole.dll
