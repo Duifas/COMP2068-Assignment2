@@ -89,7 +89,7 @@ passport.use(new LocalStrategy(function (userEmail, password, done) {
     });
 }));
 
-/*
+
 // Use the GoogleStrategy within Passport.
 //   Strategies in Passport require a `verify` function, which accept
 //   credentials (in this case, an accessToken, refreshToken, and Google
@@ -97,7 +97,7 @@ passport.use(new LocalStrategy(function (userEmail, password, done) {
 passport.use(new GoogleStrategy({
     clientID: "944451347651-qn04pi7vka2meg6kvuvhpir0j6arr49h.apps.googleusercontent.com",
     clientSecret: "ooAvX7OTr6-PrMDiuwZhV-bY",
-    callbackURL: "http://localhost:1337/auth/google/callback"
+    callbackURL: "https://assignment2comp2068.herokuapp.com/auth/google/callback"
 },
     function (accessToken, refreshToken, profile, done) {
         userModel.find({ email: profile.id }, function (err, user) {
@@ -111,7 +111,7 @@ passport.use(new GoogleStrategy({
         });
     }
 ));
-*/
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

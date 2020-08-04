@@ -35,7 +35,7 @@ router.get('/login', function (req, res) {
     res.render('login');
 });
 
-/*
+
 // GET /auth/google
 //   Use passport.authenticate() as route middleware to authenticate the
 //   request.  The first step in Google authentication will involve
@@ -55,7 +55,7 @@ router.get('/auth/google/callback',
         res.redirect('/');
     });
 
-*/
+
 
 
 // GET register page
