@@ -12,6 +12,14 @@ var LocalStrategy = require('passport-local').Strategy;
 var bcrypt = require('bcryptjs');
 var GoogleStrategy = require('passport-google-oauth20').OAuth2Strategy;
 
+/*
+ * Name: Thales Barros Fajardo Valente
+ * Student ID: 200400698
+ * Date: 07/06/2020
+ * 
+ * Description: Creation of the npm libraries and mainly the passport for user authentication
+ */
+
 //Addition of Mongo client for connection of database
 const MongoClient = require('mongodb').MongoClient;
 var mongoose = require('mongoose');
@@ -89,7 +97,7 @@ passport.use(new LocalStrategy(function (userEmail, password, done) {
     });
 }));
 
-
+/*
 // Use the GoogleStrategy within Passport.
 //   Strategies in Passport require a `verify` function, which accept
 //   credentials (in this case, an accessToken, refreshToken, and Google
@@ -111,7 +119,7 @@ passport.use(new GoogleStrategy({
         });
     }
 ));
-
+*/
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

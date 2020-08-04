@@ -1,4 +1,12 @@
-﻿'use strict';
+﻿/*
+ * Name: Thales Barros Fajardo Valente
+ * Student ID: 200400698
+ * Date: 07/06/2020
+ * 
+ * Description: Main router file that connect all pages and POST functions
+ */
+
+'use strict';
 var express = require('express');
 var router = express.Router();
 var passport = require('passport');
@@ -35,7 +43,7 @@ router.get('/login', function (req, res) {
     res.render('login');
 });
 
-
+/*
 // GET /auth/google
 //   Use passport.authenticate() as route middleware to authenticate the
 //   request.  The first step in Google authentication will involve
@@ -54,8 +62,7 @@ router.get('/auth/google/callback',
     function (req, res) {
         res.redirect('/');
     });
-
-
+*/
 
 
 // GET register page

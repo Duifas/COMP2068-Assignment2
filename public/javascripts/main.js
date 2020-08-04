@@ -1,4 +1,12 @@
-﻿$(document).ready(function () {
+﻿/*
+ * Name: Thales Barros Fajardo Valente
+ * Student ID: 200400698
+ * Date: 07/06/2020
+ * 
+ * Description: Creation of the javaScript file that makes sure the post is deleted
+ */
+
+$(document).ready(function () {
     $('.deleteForm').on('submit', function (e) {
         var currentForm = $(this).parent().parent();
         e.preventDefault();
