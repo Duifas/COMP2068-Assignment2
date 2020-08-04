@@ -1,0 +1,81 @@
+﻿html {
+    background-color: black;
+}
+
+body {
+    padding: 20px 20px 5px 20px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+a {
+    color: #00B7FF;
+    padding: 2px 5px 2px 5px;
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+footer {
+    padding: 0px;
+    width: 100%;
+    background-color: grey;
+}
+
+table, th, td {
+    border: 1.5px solid blue;
+    padding: 0px;
+    margin: 0px;
+    border-spacing: 0;
+    font-size: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+header, nav, nav a {
+    width: 100%;
+    margin: auto;
+}
+
+
+form {
+    border: 1px solid black;
+    padding: 3px;
+    padding-bottom: 10px;
+}
+
+input {
+    width: 30%;
+}
+
+p {
+    font-size: 15px;
+}
+
+ol, ul {
+    padding: 0;
+}
+
+    ol li, ul li {
+        list-style-position: inside;
+        font-size: 15px;
+    }
+
+.change {
+    border: 1px solid black;
+    color: black;
+    margin: 3px;
+    padding: 3px;
+}
+
+    .change:hover {
+        color: blue;
+        background-color: black;
+    }

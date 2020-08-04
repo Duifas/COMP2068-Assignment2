@@ -1,0 +1,18 @@
+﻿extends partials/header
+block content
+    h1 Register Page
+    form(method='POST' action='/register')
+        fieldset
+            label(for='lastName') First Name
+            input#firstName(type='text' name='firstName')
+        fieldset
+            label(for='lastName') Last Name
+            input#lastName(type='text' name='lastName')
+        fieldset
+            label(for='userEmail') Email
+            input#userEmail(type='text' name='userEmail')
+        fieldset
+            label(for='password') Password
+            input#password(type='password' name='password')
+        input(type='submit' value='Register')
+    include partials/footer

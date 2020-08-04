@@ -1,0 +1,22 @@
+﻿doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+  body
+    header
+        nav
+            a(href='/') Home
+            |  | 
+            a(href='/products') All Products
+            if (!user)
+                |  | 
+                a(href='/login') Login 
+                |  | 
+                a(href='/register') Register
+            else
+                |  | 
+                a(href='/userProducts') Your Products
+                |  | 
+                a(href='/logout') Logout
+    block content

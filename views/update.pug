@@ -1,0 +1,18 @@
+﻿extends partials/header
+
+block content
+     h1 Update the Product
+        form(method='POST' action='/update' enctype='multipart/form-data')
+            fieldset
+                label(for='productName') Product Name:
+                input#productName(type='text' name='productName' value=product.productName)
+            fieldset
+                label(for='productPrice') Price:
+                input#productPrice(type='text' name='productPrice' value=product.productPrice)
+            fieldset
+                label(for='productImage') Product Image:
+                input#productImage(type='file' name='productImage' value=product.productImage)
+                input(type='hidden' name='id' value=product.id)
+            button(type='submit' value='Submit') Submit
+
+     include partials/footer

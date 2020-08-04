@@ -1,0 +1,43 @@
+﻿extends partials/header
+
+block content
+  h1 Products Page
+  if(user)
+        p You are logged in
+        form(method='POST' action='/products' enctype='multipart/form-data')
+            fieldset
+                label(for='productName') Product Name:
+                input#productName(type='text' name='productName')
+            fieldset
+                label(for='productPrice') Price:
+                input#productPrice(type='text' name='productPrice')
+            fieldset
+                label(for='productImage') Product Image:
+                input#productImage(type='file' name='productImage')
+            button(type='submit' value='Submit') Submit
+  else
+        p You are not logged in
+
+  
+  h2 All Products
+   if(products && products.length)
+    table
+        thead
+            th Product Image
+            th Product Name
+            th Product Price
+            th User Selling
+        tbody
+            each product in products
+
+                tr
+                    td
+                        img(src='/images/'+product.productImage width="200px")
+                    td= product.productName
+                    td= "$" + product.productPrice
+                    td= product.userId
+
+   else 
+        h2 No products!
+
+  include partials/footer

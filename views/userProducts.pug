@@ -1,0 +1,29 @@
+﻿extends partials/header
+
+block content
+    
+    h1 Your Products
+    
+    table
+            thead
+                th Product Image
+                th Product Name
+                th Product Price
+                th Options
+            tbody
+                each product in products
+                    if(user._id == product.userId)
+                        tr
+                            td
+                                img(src='/images/'+product.productImage width="200px")
+                            td= product.productName
+                            td= "$" + product.productPrice
+                            td 
+                                a.change(href='/update/' + product.id) Update
+                                br
+                                br
+                                form.deleteForm(id=product.id)
+                                    button(type='submit') Delete
+                        
+
+    include partials/footer
